@@ -2,7 +2,7 @@ program mtp;
 
 uses
   System.StartUpCopy,
-  FMX.Forms,
+  Vcl.Forms,
   Forms.Main in 'Forms.Main.pas' {frmMain},
   Basic.Bencoding in 'basic\Basic.Bencoding.pas',
   Basic.BigInteger in 'basic\Basic.BigInteger.pas',
@@ -51,11 +51,7 @@ uses
   Bittorrent.MagnetLink in 'bittorrent\Bittorrent.MagnetLink.pas',
   Bittorrent.Tracker.UDP in 'bittorrent\Bittorrent.Tracker.UDP.pas',
   UDP.Server in 'udp\UDP.Server.pas',
-  UDP.Client in 'udp\UDP.Client.pas',
-  Frames.Overlay in 'Frames.Overlay.pas' {frmOverlay: TFrame},
-  Frames.Player in 'Frames.Player.pas' {frmPlayer: TFrame},
-  VLC.Player in 'vlc\VLC.Player.pas',
-  PasLibVlcUnit in 'vlc\PasLibVlcUnit.pas';
+  UDP.Client in 'udp\UDP.Client.pas';
 
 {$R *.res}
 
